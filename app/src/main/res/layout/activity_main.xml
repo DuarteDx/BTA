@@ -6,13 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.junitec.bta.MainActivity">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="161dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Samsung S6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="67dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Telemóvel conectado:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="438dp" />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/minus_button"
         android:layout_width="66dp"
         android:layout_height="64dp"
         android:text="-"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="278dp"
+        android:layout_marginRight="87dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -20,10 +50,14 @@
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
-        android:text="2"
+        android:text="37ºC"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="278dp" />
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/editText"
+        tools:layout_editor_absoluteY="221dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <TextView
         android:id="@+id/textView"
@@ -34,24 +68,30 @@
         android:text="Nível atual:"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="290dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="109dp"
         android:layout_height="97dp"
-        app:srcCompat="@drawable/JUNITEC_logo"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:srcCompat="@drawable/junitec_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="210dp"
-        android:layout_height="194dp"
-        app:srcCompat="@drawable/BTA_logo"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="-17dp" />
+        android:layout_width="176dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/bta_logo"
+        android:layout_marginRight="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-21dp" />
 
     <TextView
         android:id="@+id/editText"
@@ -62,25 +102,40 @@
         android:text="Temperatura atual:"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="221dp" />
+        android:layout_marginLeft="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="221dp" />
 
     <TextView
-        android:id="@+id/editText2"
+        android:id="@+id/level_textview"
         android:layout_width="75dp"
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
-        android:text="37ºC"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="221dp" />
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="-17dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="290dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/plus_button"
         android:layout_width="66dp"
         android:layout_height="64dp"
         android:text="+"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="278dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar Telemóvel"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="366dp"
+        android:layout_marginRight="102dp"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
